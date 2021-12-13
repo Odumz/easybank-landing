@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    :root {
+        --color-dark-blue: 45, 49, 77;
+        --color-lime-green: 49, 211, 92;
+        --color-bright-cyan: 43, 183, 218;
+        --color-grayish-blue: 150, 152, 166;
+        --color-light-grayish-blue: 243, 244, 246;
+        --color-very-light-gray: 250, 250, 250;
+    }
+}
