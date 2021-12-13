@@ -1,16 +1,18 @@
 <template>
-  <button
-    class="text-skin-base dark:text-gray-800 bg-skin-fill hover:bg-skin-button-muted font-bold rounded-full w-full"
-  >
-    <slot></slot>
-  </button>
+  <div class="flex">
+    <button
+      class="py-2 px-4 w- text-white dark:text-gray-800 bg-gradient-to-r from-lime-green to-bright-cyan hover:opacity-75 font-bold rounded-full w-full"
+    >
+      <slot></slot>
+    </button>
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "HelloWorld",
+  name: "button",
   props: {
     msg: String,
   },

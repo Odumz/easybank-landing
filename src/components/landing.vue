@@ -1,19 +1,27 @@
 <template>
-  <button
-    class="text-skin-base dark:text-gray-800 bg-skin-fill hover:bg-skin-button-muted font-bold rounded-full w-full"
-  >
-    <slot></slot>
-  </button>
+  <div class="container">
+    <div class="text-content">
+      <h1 class="font-medium text-5xl py-3">Next generation digital banking</h1>
+      <p>
+        Take your financial life online. Your Easybank account will be a
+        one-stop-shop for spending, saving, budgeting, investing, and much more.
+      </p>
+      <buttons>Request Invite</buttons>
+    </div>
+    <div class="image"></div>
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import buttons from "../components/button.vue";
 
 export default defineComponent({
   name: "HelloWorld",
-  props: {
-    msg: String,
+  components: {
+    buttons,
   },
+  props: {},
 });
 </script>
 
