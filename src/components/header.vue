@@ -1,5 +1,7 @@
 <template>
-  <div class="flex justify-between px-16 items-center py-3 overflow-hidden">
+  <div
+    class="flex justify-between md:px-16 px-5 items-center py-3 overflow-hidden"
+  >
     <div class="p-3">
       <img src="../assets/logo.svg" alt="easybank logo" />
     </div>
@@ -13,11 +15,11 @@
     <div class="cta_btn lg:flex hidden">
       <buttons>Request Invite</buttons>
     </div>
-    <div class="hamburger flex lg:hidden">
+    <!-- <div class="hamburger flex lg:hidden">
       <img src="../assets/icon-hamburger.svg" alt="hamburger-menu" />
       <img src="../assets/icon-close.svg" alt="close-menu" />
       <div
-        class="mobile-menu grid px-10 py-5 rounded-md bg-white md:w-1/4 w-2/3 border-2 absolute inset-x-1/2"
+        class="mobile-menu grid px-10 py-5 rounded-md bg-white sm:w-1/4 w-2/3 border-2 absolute top-16 right-16"
       >
         <router-link to="/" class="py-2">Home</router-link>
         <router-link to="/about" class="py-2">About</router-link>
@@ -25,7 +27,7 @@
         <router-link to="/blog" class="py-2">Blog</router-link>
         <router-link to="/careers" class="py-2">Careers</router-link>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 

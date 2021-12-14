@@ -1,14 +1,12 @@
 <template>
-  <div class="service">
-    <div class="icon">
+  <div class="mb-5">
+    <div class="icon flex justify-center items-center my-3">
       <slot name="icon"></slot>
     </div>
     <div class="content">
-      <h1>Online Banking<slot name="title"></slot></h1>
-      <p>
+      <h1 class="text-xl py-3"><slot name="title"></slot></h1>
+      <p class="text-lg text-grayish-blue">
         <slot name="text-description"></slot>
-        Our modern web and mobile applications allow you to keep track of your
-        finances wherever you are in the world.
       </p>
     </div>
   </div>
@@ -18,7 +16,7 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "HelloWorld",
+  name: "service",
   props: {
     msg: String,
   },

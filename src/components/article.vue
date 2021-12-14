@@ -1,19 +1,26 @@
 <template>
-  <button
-    class="text-skin-base dark:text-gray-800 bg-skin-fill hover:bg-skin-button-muted font-bold rounded-full w-full"
-  >
-    <slot></slot>
-  </button>
+  <div class="mb-5">
+    <div class="icon flex justify-center items-center my-3">
+      <slot name="icon"></slot>
+    </div>
+    <div class="text-left px-6">
+      <h1 class="text-sm pt-4 text-grayish-blue">
+        <slot name="author"></slot>
+      </h1>
+      <h1 class="text-xl pt-1 pb-3 opacity-90"><slot name="title"></slot></h1>
+      <p class="text-grayish-blue mb-10">
+        <slot name="text-description"></slot>
+      </p>
+    </div>
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "HelloWorld",
-  props: {
-    msg: String,
-  },
+  name: "article",
+  props: {},
 });
 </script>
 

@@ -8,6 +8,7 @@ function withOpacity(variableName) {
 }
 
 module.exports = {
+  // mode: "jit",
   purge: ["./**/*.{vue, js, jsx}"],
   darkMode: "class", // or 'media' or 'class'
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
@@ -20,6 +21,17 @@ module.exports = {
         "grayish-blue": withOpacity("--color-grayish-blue"),
         "light-grayish-blue": withOpacity("--color-light-grayish-blue"),
         "light-gray": withOpacity("--color-light-gray"),
+      },
+      backgroundImage: {
+        "hero-pattern": "url('../src/assets/bg-intro-mobile.svg')",
+      },
+      height: {
+        92: "23rem",
+        98: "29rem",
+      },
+      maxHeight: {
+        92: "23rem",
+        98: "29rem",
       },
     },
   },

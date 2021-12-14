@@ -1,16 +1,18 @@
 <template>
-  <button
-    class="text-skin-base dark:text-gray-800 bg-skin-fill hover:bg-skin-button-muted font-bold rounded-full w-full"
-  >
-    <slot></slot>
-  </button>
+  <div class="footer md:px-16 px-5">
+    <button
+      class="text-skin-base dark:text-gray-800 bg-skin-fill hover:bg-skin-button-muted font-bold rounded-full w-full"
+    >
+      <slot></slot>
+    </button>
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "HelloWorld",
+  name: "footer",
   props: {
     msg: String,
   },
