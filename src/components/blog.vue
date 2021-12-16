@@ -12,7 +12,7 @@
         <template #icon
           ><img
             src="../assets/image-currency.jpg"
-            class="lg:max-h-56 max-h-36"
+            class="h-35 w-full rounded-t flex"
             alt="currency"
         /></template>
         <template #author> By Claire Robinson </template>
@@ -40,7 +40,10 @@
       </articles>
       <articles>
         <template #icon
-          ><img src="../assets/image-plane.jpg" alt="online banking"
+          ><img
+            src="../assets/image-plane.jpg"
+            class="rounded-t"
+            alt="online banking"
         /></template>
         <template #author> By Wilson Hutton </template>
         <template #title> Take your Easybank card wherever you go </template>
@@ -52,7 +55,10 @@
       </articles>
       <articles>
         <template #icon
-          ><img src="../assets/image-confetti.jpg" alt="online banking"
+          ><img
+            src="../assets/image-confetti.jpg"
+            class="rounded-t"
+            alt="online banking"
         /></template>
         <template #author> By Claire Robinson </template>
         <template #title>

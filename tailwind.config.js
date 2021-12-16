@@ -14,6 +14,9 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      width: {
+        99: "88.833333333%",
+      },
       colors: {
         "dark-blue": withOpacity("--color-dark-blue"),
         "lime-green": withOpacity("--color-lime-green"),
@@ -28,6 +31,9 @@ module.exports = {
       height: {
         92: "23rem",
         98: "29rem",
+        35: "140px",
+        34: "7rem",
+        99: "88.833333333%",
       },
       maxHeight: {
         92: "23rem",
