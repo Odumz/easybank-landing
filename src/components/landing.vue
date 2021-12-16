@@ -25,7 +25,9 @@
         Take your financial life online. Your Easybank account will be a
         one-stop-shop for spending, saving, budgeting, investing, and much more.
       </p>
-      <buttons>Request Invite</buttons>
+      <div class="flex justify-center items-center my-7">
+        <buttons class=""> Request Invite </buttons>
+      </div>
     </div>
     <!-- <div class="image">
       <img src="../assets/image-mockups.png" alt="" />

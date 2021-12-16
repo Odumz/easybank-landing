@@ -1,5 +1,5 @@
 <template>
-  <div class="about md:px-16 px-5 py-10">
+  <div class="about md:px-16 px-5 py-10 bg-light-gray">
     <div class="title">
       <h1 class="text-4xl md:text-5xl px-10 py-6">Latest Articles</h1>
       <!-- <p class="text-lg text-grayish-blue">
@@ -24,7 +24,10 @@
       </articles>
       <articles>
         <template #icon
-          ><img src="../assets/image-restaurant.jpg" alt="restaurant"
+          ><img
+            src="../assets/image-restaurant.jpg"
+            alt="restaurant"
+            class="rounded-t"
         /></template>
         <template #author> By Wilson Hutton </template>
         <template #title>

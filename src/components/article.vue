@@ -1,6 +1,6 @@
 <template>
-  <div class="mb-5">
-    <div class="icon flex justify-center items-center my-3">
+  <div class="mb-5 rounded bg-white">
+    <div class="icon flex justify-center items-center mb-3">
       <slot name="icon"></slot>
     </div>
     <div class="text-left px-6">
