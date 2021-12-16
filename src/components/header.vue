@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex justify-between md:px-16 px-5 items-center py-3 overflow-hidden"
+    class="flex justify-between md:px-16 px-7 items-center py-3 overflow-hidden"
   >
     <div class="p-3">
       <img src="../assets/logo.svg" alt="easybank logo" />

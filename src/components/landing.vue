@@ -17,11 +17,11 @@
         class="object-cover relative md:w-full object-bottom w-full h-92"
       />
     </div>
-    <div class="text-content px-5">
-      <h1 class="font-medium md:text-5xl text-4xl py-3 px-10">
+    <div class="text-content px-7 pb-10">
+      <h1 class="font-medium md:text-5xl text-4xl py-4 sm:px-10">
         Next generation digital banking
       </h1>
-      <p class="text-lg">
+      <p class="sm:text-lg text-grayish-blue">
         Take your financial life online. Your Easybank account will be a
         one-stop-shop for spending, saving, budgeting, investing, and much more.
       </p>

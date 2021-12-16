@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <main-header />
-    <!-- <landing /> -->
+    <landing />
     <about />
     <blog />
     <footer-menu />
@@ -13,7 +13,7 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 // import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
-// import landing from "@/components/landing.vue";
+import landing from "@/components/landing.vue";
 import about from "@/components/about.vue";
 import blog from "@/components/blog.vue";
 import footerMenu from "@/components/footer.vue";
@@ -23,7 +23,7 @@ export default defineComponent({
   name: "Home",
   components: {
     // HelloWorld,
-    // landing,
+    landing,
     blog,
     about,
     footerMenu,

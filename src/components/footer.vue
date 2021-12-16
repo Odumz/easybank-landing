@@ -1,6 +1,6 @@
 <template>
   <div
-    class="lg:justify-between items-center md:px-16 px-5 bg-dark-blue grid lg:flex"
+    class="lg:justify-between items-center md:px-16 px-7 bg-dark-blue grid lg:flex"
   >
     <div class="lg:flex lg:space-x-20 items-center justify-center">
       <div class="grid justify-items-center lg:gap-y-10">
@@ -38,7 +38,7 @@
         </div>
       </div>
     </div>
-    <div class="grid items-center justify-items-end">
+    <div class="grid items-center justify-items-center lg:justify-items-end">
       <div class="flex justify-center items-center my-7">
         <buttons class=""> Request Invite </buttons>
       </div>

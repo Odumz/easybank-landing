@@ -1,5 +1,5 @@
 <template>
-  <div class="about md:px-16 px-5 py-10 bg-light-gray">
+  <div class="about md:px-16 px-7 py-10 bg-light-gray">
     <div class="title">
       <h1 class="text-4xl md:text-5xl px-10 py-6">Latest Articles</h1>
       <!-- <p class="text-lg text-grayish-blue">
@@ -12,7 +12,7 @@
         <template #icon
           ><img
             src="../assets/image-currency.jpg"
-            class="h-35 w-full rounded-t flex"
+            class="rounded-t"
             alt="currency"
         /></template>
         <template #author> By Claire Robinson </template>
