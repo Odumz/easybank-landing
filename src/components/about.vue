@@ -1,7 +1,9 @@
 <template>
   <div class="about md:px-16 px-7 py-10 bg-light-grayish-blue">
-    <div class="title">
-      <h1 class="text-4xl md:text-5xl sm:px-10 py-6">Why choose Easybank?</h1>
+    <div class="lg:text-left">
+      <h1 class="text-4xl md:text-5xl lg:px-0 sm:px-10 py-6">
+        Why choose Easybank?
+      </h1>
       <p class="text-lg text-grayish-blue">
         We leverage Open Banking to turn your bank account into your financial
         hub. Control your finances like never before.

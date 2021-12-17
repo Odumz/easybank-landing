@@ -14,6 +14,16 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      scale: {
+        175: "1.75",
+        137: "1.30",
+      },
+      screens: {
+        mm: "540px",
+        dl: "820px",
+        dlg: "920px",
+        "2xl": "1440px",
+      },
       inset: {
         "1/5": "20%",
         "2/5": "40%",
@@ -101,10 +111,21 @@ module.exports = {
       height: {
         92: "23rem",
         98: "29rem",
+        md: "37rem",
+        lg: "47rem",
+        xl: "52rem",
+      },
+      minHeight: {
+        md: "37rem",
+        lg: "47rem",
+        xl: "52rem",
       },
       maxHeight: {
         92: "23rem",
         98: "29rem",
+        md: "37rem",
+        lg: "47rem",
+        xl: "52rem",
       },
     },
   },

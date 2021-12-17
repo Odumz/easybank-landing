@@ -2,9 +2,9 @@
   <div class="home">
     <main-header />
     <landing />
-    <about />
-    <blog />
-    <footer-menu />
+    <about id="about" />
+    <blog id="blog" />
+    <footer-menu id="contact" />
     <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" /> -->
   </div>

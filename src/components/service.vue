@@ -1,9 +1,9 @@
 <template>
   <div class="mb-5">
-    <div class="icon flex justify-center items-center my-3">
+    <div class="icon flex lg:justify-start justify-center items-center my-3">
       <slot name="icon"></slot>
     </div>
-    <div class="content">
+    <div class="lg:text-left">
       <h1 class="text-xl py-3"><slot name="title"></slot></h1>
       <p class="text-lg text-grayish-blue">
         <slot name="text-description"></slot>

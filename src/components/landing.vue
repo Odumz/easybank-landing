@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container relative lg:flex justify-center items-center grid md:px-16 bg-light-gray"
+    class="relative lg:flex justify-center items-center grid md:px-16 bg-light-gray"
   >
     <div class="lg:order-1 lg:w-4/7">
       <img
@@ -12,27 +12,34 @@
         <img
           src="../assets/image-mockups.png"
           alt="mockups"
-          class="object-cover relative md:w-full object-bottom w-full h-92"
+          class="object-cover relative sm:mx-24 mm:px-10 mm:h-98 object-bottom w-full h-92"
         />
       </div>
       <div>
         <img
-          class="md:flex relative top-20 transform scale-125 hidden bg-no-repeat w-full mb-24"
+          class="md:flex relative top-20 left-7 transform scale-137 hidden bg-no-repeat mb-28"
           src="../assets/bg-intro-desktop.svg"
           alt="intro desktop"
         />
       </div>
-      <!-- <div class="">
+      <div class="">
         <img
           src="../assets/image-mockups.png"
           alt="mockups"
-          class="absolute top-0 object-bottom"
+          class="absolute top-0 -mt-28 dl:left-10 dlg:left-24 lg:hidden left-1 hidden md:flex transform scale-75"
         />
-      </div> -->
+      </div>
+      <div class="">
+        <img
+          src="../assets/image-mockups.png"
+          alt="mockups"
+          class="absolute xl:max-h-lg 2xl:max-h-xl max-h-md -right-36 top-0 w-3/5 object-cover object-bottom hidden lg:flex"
+        />
+      </div>
     </div>
-    <div class="lg:w-3/7 mx-7 md:text-left pb-10">
+    <div class="lg:w-3/7 mx-7 lg:text-left mt-5 grid mm:pt-10 sm:pt-20 pb-10">
       <h1
-        class="font-medium md:text-5xl text-4xl lg:px-2 py-4 lg:leading-tight md:px-16 sm:px-10"
+        class="font-medium md:text-5xl text-4xl lg:px-2 py-4 lg:leading-tight md:px-24 sm:px-10"
       >
         Next generation digital banking
       </h1>
