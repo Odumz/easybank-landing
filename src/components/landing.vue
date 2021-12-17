@@ -1,31 +1,46 @@
 <template>
-  <div class="container relative bg-no-repeat grid md:px-16">
-    <img
-      class="absolute md:hidden bg-no-repeat inset-0 max-h-98 w-full object-cover"
-      src="../assets/bg-intro-mobile.svg"
-      alt="intro mobile"
-    />
-    <img
-      class="absolute md:flex hidden bg-no-repeat inset-0 h-full w-full object-cover"
-      src="../assets/bg-intro-desktop.svg"
-      alt="intro mobile"
-    />
-    <div class="image flex justify-center md:py-10">
+  <div
+    class="container relative lg:flex justify-center items-center grid md:px-16 bg-light-gray"
+  >
+    <div class="lg:order-1 lg:w-4/7">
       <img
-        src="../assets/image-mockups.png"
-        alt=""
-        class="object-cover relative md:w-full object-bottom w-full h-92"
+        class="absolute md:hidden bg-no-repeat inset-0 max-h-98 w-full object-cover"
+        src="../assets/bg-intro-mobile.svg"
+        alt="intro mobile"
       />
+      <div class="image md:hidden flex justify-center md:py-10">
+        <img
+          src="../assets/image-mockups.png"
+          alt="mockups"
+          class="object-cover relative md:w-full object-bottom w-full h-92"
+        />
+      </div>
+      <div>
+        <img
+          class="md:flex relative top-20 transform scale-125 hidden bg-no-repeat w-full mb-24"
+          src="../assets/bg-intro-desktop.svg"
+          alt="intro desktop"
+        />
+      </div>
+      <!-- <div class="">
+        <img
+          src="../assets/image-mockups.png"
+          alt="mockups"
+          class="absolute top-0 object-bottom"
+        />
+      </div> -->
     </div>
-    <div class="text-content px-7 pb-10">
-      <h1 class="font-medium md:text-5xl text-4xl py-4 sm:px-10">
+    <div class="lg:w-3/7 mx-7 md:text-left pb-10">
+      <h1
+        class="font-medium md:text-5xl text-4xl lg:px-2 py-4 lg:leading-tight md:px-16 sm:px-10"
+      >
         Next generation digital banking
       </h1>
       <p class="sm:text-lg text-grayish-blue">
         Take your financial life online. Your Easybank account will be a
         one-stop-shop for spending, saving, budgeting, investing, and much more.
       </p>
-      <div class="flex justify-center items-center my-7">
+      <div class="flex lg:justify-start justify-center items-center my-10">
         <buttons class=""> Request Invite </buttons>
       </div>
     </div>
@@ -64,7 +79,4 @@ li {
 a {
   color: #42b983;
 } */
-.h-100 {
-  height: 27rem;
-}
 </style>

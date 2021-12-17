@@ -1,8 +1,6 @@
 <template>
-  <div
-    class="lg:justify-between items-center md:px-16 px-7 bg-dark-blue grid lg:flex"
-  >
-    <div class="lg:flex lg:space-x-20 items-center justify-center">
+  <div class="lg:justify-between md:px-16 px-7 bg-dark-blue grid lg:flex">
+    <div class="lg:flex lg:space-x-36 items-center justify-center">
       <div class="grid justify-items-center lg:gap-y-10">
         <div class="flex justify-center mt-10 mb-7">
           <img src="../assets/logo_white.svg" alt="easybank_logo" />
@@ -38,11 +36,11 @@
         </div>
       </div>
     </div>
-    <div class="grid items-center justify-items-center lg:justify-items-end">
+    <div class="grid justify-items-center lg:justify-items-end">
       <div class="flex justify-center items-center my-7">
         <buttons class=""> Request Invite </buttons>
       </div>
-      <div class="text-grayish-blue mb-16">
+      <div class="text-grayish-blue lg:mb-5 mb-16">
         &copy; Easybank. All Rights Reserved
       </div>
     </div>
