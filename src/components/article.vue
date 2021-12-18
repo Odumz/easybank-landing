@@ -7,7 +7,9 @@
       <h1 class="text-sm pt-4 text-grayish-blue">
         <slot name="author"></slot>
       </h1>
-      <h1 class="text-xl pt-1 pb-3 opacity-90"><slot name="title"></slot></h1>
+      <h1 class="text-xl pt-1 pb-3 opacity-90 hover:text-lime-green">
+        <slot name="title"></slot>
+      </h1>
       <p class="text-grayish-blue mb-10">
         <slot name="text-description"></slot>
       </p>
