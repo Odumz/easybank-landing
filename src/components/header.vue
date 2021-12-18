@@ -37,7 +37,7 @@
     <div class="hamburger flex lg:hidden">
       <svg
         v-if="showMenu"
-        @click="toggleMenu"
+        @click="toggleMenu(), simpleFade()"
         xmlns="http://www.w3.org/2000/svg"
         width="18"
         height="19"
@@ -49,7 +49,7 @@
       </svg>
       <svg
         v-else
-        @click="toggleMenu"
+        @click="simpleFade(), toggleMenu()"
         xmlns="http://www.w3.org/2000/svg"
         width="24"
         height="11"
@@ -60,7 +60,7 @@
       </svg>
       <div
         v-if="showMenu"
-        class="bg-black bg-opacity-40 w-screen absolute top-17 right-0 z-10 flex justify-center items-start pt-10 h-screen"
+        class="bgfade bg-black bg-opacity-40 w-screen absolute top-17 right-0 z-10 flex justify-center items-start pt-10 h-screen"
       >
         <div
           class="mobile-menu z-10 grid px-10 py-5 rounded-md bg-white sm:w-1/4 w-2/3 shadow-md right-16"
@@ -88,9 +88,6 @@ export default defineComponent({
   components: {
     buttons,
   },
-  props: {
-    msg: String,
-  },
   data() {
     return {
       showMenu: false,
@@ -100,24 +97,9 @@ export default defineComponent({
     toggleMenu() {
       this.showMenu = !this.showMenu;
     },
+    simpleFade() {
+      gsap.fromTo(".bgfade", { autoAlpha: 1 }, { autoAlpha: 0, duration: 3 });
+    },
   },
 });
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-/* h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-} */
-</style>
