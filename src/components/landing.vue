@@ -4,25 +4,25 @@
   >
     <div class="lg:order-1 lg:w-4/7">
       <img
-        class="absolute md:hidden bg-no-repeat inset-0 max-h-98 w-full object-cover"
+        class="bgc absolute md:hidden bg-no-repeat inset-0 max-h-98 w-full object-cover"
         src="../assets/bg-intro-mobile.svg"
         alt="intro mobile"
       />
-      <div class="image md:hidden flex justify-center md:py-10">
+      <div class="mockup image md:hidden flex justify-center md:py-10">
         <img
           src="../assets/image-mockups.png"
           alt="mockups"
           class="object-cover relative sm:mx-24 mm:px-10 mm:h-98 object-bottom w-full h-92"
         />
       </div>
-      <div>
+      <div class="bgc">
         <img
-          class="md:flex relative top-20 left-7 transform scale-137 hidden bg-no-repeat mb-28"
+          class="md:flex relative top-20 dl:top-24 dlg:top-28 left-7 transform scale-137 hidden bg-no-repeat mb-28"
           src="../assets/bg-intro-desktop.svg"
           alt="intro desktop"
         />
       </div>
-      <div class="">
+      <div class="mockup">
         <img
           src="../assets/image-mockups.png"
           alt="mockups"
@@ -33,21 +33,21 @@
         <img
           src="../assets/image-mockups.png"
           alt="mockups"
-          class="absolute xl:max-h-lg 2xl:max-h-xl max-h-md -right-36 top-0 w-3/5 object-cover object-bottom hidden lg:flex"
+          class="absolute mockup xl:max-h-lg 2xl:max-h-xl max-h-md -right-36 top-0 w-3/5 object-cover object-bottom hidden lg:flex"
         />
       </div>
     </div>
     <div class="lg:w-3/7 mx-7 lg:text-left mt-5 grid mm:pt-10 sm:pt-20 pb-10">
       <h1
-        class="font-medium md:text-5xl text-4xl lg:px-2 py-4 lg:leading-tight md:px-24 sm:px-10"
+        class="title font-medium md:text-5xl text-4xl lg:px-2 py-4 lg:leading-tight md:px-24 sm:px-10"
       >
         Next generation digital banking
       </h1>
-      <p class="sm:text-lg text-grayish-blue">
+      <p class="description sm:text-lg text-grayish-blue">
         Take your financial life online. Your Easybank account will be a
         one-stop-shop for spending, saving, budgeting, investing, and much more.
       </p>
-      <div class="flex lg:justify-start justify-center items-center my-10">
+      <div class="btn flex lg:justify-start justify-center items-center my-10">
         <buttons class=""> Request Invite </buttons>
       </div>
     </div>
@@ -60,13 +60,47 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import buttons from "../components/button.vue";
+import { gsap } from "gsap";
+import { CSSPlugin } from "gsap/CSSPlugin";
+gsap.registerPlugin(CSSPlugin);
 
 export default defineComponent({
   name: "landing",
   components: {
     buttons,
   },
-  props: {},
+  mounted() {
+    gsap.from(".title", {
+      duration: 2.5,
+      opacity: 0,
+      x: -100,
+      ease: "power3.out",
+    });
+    gsap.from(".description", {
+      duration: 2.5,
+      opacity: 0,
+      x: -100,
+      ease: "power3.out",
+    });
+    gsap.from(".btn", {
+      duration: 2.5,
+      opacity: 0,
+      x: -100,
+      ease: "power3.out",
+    });
+    gsap.from(".bgc", {
+      duration: 3,
+      opacity: 0,
+      x: 100,
+      ease: "power3.out",
+    });
+    gsap.from(".mockup", {
+      duration: 4.5,
+      opacity: 0,
+      x: 100,
+      ease: "power3.out",
+    });
+  },
 });
 </script>
 

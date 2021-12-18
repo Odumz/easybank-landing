@@ -1,5 +1,5 @@
 <template>
-  <div class="about md:px-16 px-7 py-10 bg-light-gray">
+  <div class="md:px-16 px-7 py-10 bg-light-gray">
     <div class="lg:text-left">
       <h1 class="text-4xl md:text-5xl lg:px-0 px-10 py-6">Latest Articles</h1>
     </div>
@@ -79,6 +79,5 @@ export default defineComponent({
   components: {
     articles,
   },
-  props: {},
 });
 </script>

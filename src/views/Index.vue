@@ -18,6 +18,9 @@ import about from "@/components/about.vue";
 import blog from "@/components/blog.vue";
 import footerMenu from "@/components/footer.vue";
 import mainHeader from "@/components/header.vue";
+import { gsap } from "gsap";
+import { CSSPlugin } from "gsap/CSSPlugin";
+gsap.registerPlugin(CSSPlugin);
 
 export default defineComponent({
   name: "Home",
@@ -28,6 +31,14 @@ export default defineComponent({
     about,
     footerMenu,
     mainHeader,
+  },
+  mounted() {
+    gsap.from(".home", {
+      duration: 1,
+      opacity: 0,
+      y: -300,
+      ease: "back.out(1.7)",
+    });
   },
 });
 </script>
