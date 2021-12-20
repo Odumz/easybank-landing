@@ -25,11 +25,19 @@
       </svg>
     </div>
     <div class="lg:flex justify-between items-center text-grayish-blue hidden">
-      <router-link to="/" class="px-4">Home</router-link>
-      <router-link to="#about" class="px-4">About</router-link>
-      <router-link to="#contact" class="px-4">Contact</router-link>
-      <router-link to="#blog" class="px-4">Blog</router-link>
-      <router-link to="#careers" class="px-4">Careers</router-link>
+      <router-link to="/" class="px-4 hover:text-lime-green">Home</router-link>
+      <router-link to="#about" class="px-4 hover:text-lime-green"
+        >About</router-link
+      >
+      <router-link to="#contact" class="px-4 hover:text-lime-green"
+        >Contact</router-link
+      >
+      <router-link to="#blog" class="px-4 hover:text-lime-green"
+        >Blog</router-link
+      >
+      <router-link to="#careers" class="px-4 hover:text-lime-green"
+        >Careers</router-link
+      >
     </div>
     <div class="cta_btn lg:flex hidden">
       <buttons>Request Invite</buttons>
@@ -49,7 +57,7 @@
       </svg>
       <svg
         v-else
-        @click="simpleFade(), toggleMenu()"
+        @click="toggleMenu(), simpleFade()"
         xmlns="http://www.w3.org/2000/svg"
         width="24"
         height="11"

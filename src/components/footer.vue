@@ -101,7 +101,7 @@
           </a>
         </div>
       </div>
-      <div class="grid lg:flex gap-4 lg:gap-8 text-white">
+      <div class="grid lg:flex gap-4 lg:gap-12 text-white">
         <div class="grid lg:text-left gap-y-5">
           <a class="hover:text-lime-green" href="#about">About Us</a>
           <a class="hover:text-lime-green" href="#contact">Contact</a>
@@ -130,20 +130,11 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import buttons from "../components/button.vue";
-import { gsap } from "gsap";
-import { CSSPlugin } from "gsap/CSSPlugin";
-gsap.registerPlugin(CSSPlugin);
 
 export default defineComponent({
   name: "footer",
   components: {
     buttons,
   },
-  props: {
-    msg: String,
-  },
 });
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped></style>
