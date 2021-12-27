@@ -17,7 +17,7 @@
       </div>
       <div class="">
         <img
-          class="md:flex bgc relative top-20 dl:top-24 dlg:top-28 left-7 transform scale-137 hidden bg-no-repeat mb-28"
+          class="md:flex bgc relative top-20 dl:top-24 dlg:top-28 left-7 transform scale-130 hidden bg-no-repeat mb-28"
           src="../assets/bg-intro-desktop.svg"
           alt="intro desktop"
         />
