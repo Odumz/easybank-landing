@@ -26,13 +26,22 @@
     </div>
     <div class="lg:flex justify-between items-center text-grayish-blue hidden">
       <router-link to="/" class="px-4 hover:text-lime-green">Home</router-link>
-      <router-link to="#about" class="px-4 hover:text-lime-green"
+      <router-link
+        to="#about"
+        class="px-4 hover:text-lime-green"
+        v-scroll-to="'#about'"
         >About</router-link
       >
-      <router-link to="#contact" class="px-4 hover:text-lime-green"
+      <router-link
+        to="#contact"
+        class="px-4 hover:text-lime-green"
+        v-scroll-to="'#contact'"
         >Contact</router-link
       >
-      <router-link to="#blog" class="px-4 hover:text-lime-green"
+      <router-link
+        to="#blog"
+        class="px-4 hover:text-lime-green"
+        v-scroll-to="'#blog'"
         >Blog</router-link
       >
       <router-link to="#careers" class="px-4 hover:text-lime-green"

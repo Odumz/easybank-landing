@@ -1,5 +1,5 @@
 <template>
-  <div class="md:px-16 px-7 py-10 bg-light-grayish-blue">
+  <div class="md:px-16 px-7 py-10 bg-light-grayish-blue" id="about">
     <div class="lg:text-left">
       <h1 class="text-4xl md:text-5xl lg:px-0 sm:px-10 py-6">
         Why choose Easybank?

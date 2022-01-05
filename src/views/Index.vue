@@ -2,8 +2,8 @@
   <div class="home">
     <main-header />
     <landing />
-    <about id="about" />
-    <blog id="blog" />
+    <about />
+    <blog />
     <footer-menu id="contact" />
     <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" /> -->
@@ -12,7 +12,6 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-// import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
 import landing from "@/components/landing.vue";
 import about from "@/components/about.vue";
 import blog from "@/components/blog.vue";
