@@ -78,36 +78,42 @@
       </svg>
       <div
         v-if="showMenu"
-        class="bgfade bg-black bg-opacity-40 w-screen absolute top-17 right-0 z-10 flex justify-center items-start pt-10 h-screen"
+        class="bgfade bg-black bg-opacity-40 w-screen absolute top-17 right-0 z-10 flex justify-center items-start pt-10 h-full"
       >
         <div
           class="mobile-menu z-10 grid px-10 py-5 rounded-md bg-white sm:w-1/4 w-2/3 shadow-md right-16"
         >
-          <router-link to="/" class="py-2 hover:text-lime-green"
+          <router-link
+            to="/"
+            class="py-2 hover:text-lime-green"
+            @click="toggleMenuDelay"
             >Home</router-link
           >
           <router-link
             to="#about"
             class="py-2 hover:text-lime-green"
             v-scroll-to="'#about'"
+            @click="toggleMenuDelay"
             >About</router-link
           >
           <router-link
             to="#contact"
             class="py-2 hover:text-lime-green"
             v-scroll-to="'#contact'"
+            @click="toggleMenuDelay"
             >Contact</router-link
           >
           <router-link
             to="#blog"
             class="py-2 hover:text-lime-green"
             v-scroll-to="'#blog'"
+            @click="toggleMenuDelay"
             >Blog</router-link
           >
           <router-link
             to="#careers"
             class="py-2 hover:text-lime-green"
-            @click.prevent="toggleMenu()"
+            @click="toggleMenuDelay"
             >Careers</router-link
           >
         </div>
@@ -136,6 +142,9 @@ export default defineComponent({
   methods: {
     toggleMenu() {
       this.showMenu = !this.showMenu;
+    },
+    toggleMenuDelay() {
+      setTimeout(this.toggleMenu, 100);
     },
     simpleFade() {
       gsap.fromTo(".bgfade", { autoAlpha: 1 }, { autoAlpha: 0, duration: 3 });
