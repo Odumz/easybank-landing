@@ -1,6 +1,7 @@
 <template>
   <div
     class="flex justify-between md:px-16 px-7 items-center py-3 overflow-hidden"
+    id="header"
   >
     <div class="p-3">
       <svg xmlns="http://www.w3.org/2000/svg" width="139" height="20">
@@ -82,11 +83,33 @@
         <div
           class="mobile-menu z-10 grid px-10 py-5 rounded-md bg-white sm:w-1/4 w-2/3 shadow-md right-16"
         >
-          <router-link to="/" class="py-2">Home</router-link>
-          <router-link to="#about" class="py-2">About</router-link>
-          <router-link to="#contact" class="py-2">Contact</router-link>
-          <router-link to="#blog" class="py-2">Blog</router-link>
-          <router-link to="#careers" class="py-2">Careers</router-link>
+          <router-link to="/" class="py-2 hover:text-lime-green"
+            >Home</router-link
+          >
+          <router-link
+            to="#about"
+            class="py-2 hover:text-lime-green"
+            v-scroll-to="'#about'"
+            >About</router-link
+          >
+          <router-link
+            to="#contact"
+            class="py-2 hover:text-lime-green"
+            v-scroll-to="'#contact'"
+            >Contact</router-link
+          >
+          <router-link
+            to="#blog"
+            class="py-2 hover:text-lime-green"
+            v-scroll-to="'#blog'"
+            >Blog</router-link
+          >
+          <router-link
+            to="#careers"
+            class="py-2 hover:text-lime-green"
+            @click.prevent="toggleMenu()"
+            >Careers</router-link
+          >
         </div>
       </div>
     </div>
