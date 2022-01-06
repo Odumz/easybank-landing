@@ -1,8 +1,10 @@
 <template>
   <div class="md:px-16 px-7 py-10 bg-light-gray" id="blog">
     <div class="lg:text-left">
+      <!-- page-title -->
       <h1 class="text-4xl md:text-5xl lg:px-0 px-10 py-6">Latest Articles</h1>
     </div>
+    <!-- articles -->
     <div class="body mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
       <articles>
         <template #icon

@@ -1,7 +1,9 @@
 <template>
   <div class="lg:justify-between md:px-16 px-7 bg-dark-blue grid lg:flex">
     <div class="lg:flex lg:space-x-36 items-center justify-center">
+      <!-- first-division -->
       <div class="grid justify-items-center lg:gap-y-10">
+        <!-- easybank-logo -->
         <div class="flex justify-center mt-10 mb-7">
           <svg xmlns="http://www.w3.org/2000/svg" width="139" height="20">
             <defs>
@@ -33,6 +35,7 @@
             </g>
           </svg>
         </div>
+        <!-- social-media -->
         <div class="flex justify-center items-center mb-9 gap-4 text-white">
           <a href="https://facebook.com" target="_blank">
             <svg
@@ -101,7 +104,9 @@
           </a>
         </div>
       </div>
+      <!-- second-division -->
       <div class="grid lg:flex gap-4 lg:gap-12 text-white">
+        <!-- quicklinks -->
         <div class="grid lg:text-left gap-y-5">
           <a class="hover:text-lime-green" href="#about">About Us</a>
           <a class="hover:text-lime-green" href="#contact">Contact</a>
@@ -116,10 +121,13 @@
         </div>
       </div>
     </div>
+    <!-- last division -->
     <div class="grid justify-items-center lg:justify-items-end">
+      <!-- cta -->
       <div class="flex justify-center items-center my-7">
         <buttons class=""> Request Invite </buttons>
       </div>
+      <!-- copyright -->
       <div class="text-grayish-blue lg:mb-5 mb-16">
         &copy; Easybank. All Rights Reserved
       </div>

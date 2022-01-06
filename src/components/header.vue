@@ -3,6 +3,7 @@
     class="flex justify-between md:px-16 px-7 items-center py-3 overflow-hidden"
     id="header"
   >
+    <!-- logo here -->
     <div class="p-3">
       <svg xmlns="http://www.w3.org/2000/svg" width="139" height="20">
         <defs>
@@ -25,6 +26,7 @@
         </g>
       </svg>
     </div>
+    <!-- desktop-menu -->
     <div class="lg:flex justify-between items-center text-grayish-blue hidden">
       <router-link to="/" class="px-4 hover:text-lime-green">Home</router-link>
       <router-link
@@ -52,7 +54,9 @@
     <div class="cta_btn lg:flex hidden">
       <buttons>Request Invite</buttons>
     </div>
+    <!-- mobile-menu -->
     <div class="hamburger flex lg:hidden">
+      <!-- close-menu -->
       <svg
         v-if="showMenu"
         @click="toggleMenu(), simpleFade()"
@@ -65,6 +69,7 @@
           <path d="M.161 17.632L17.131.662l.708.706-16.97 16.97z" />
         </g>
       </svg>
+      <!-- hamburger-menu -->
       <svg
         v-else
         @click="toggleMenu(), simpleFade()"
