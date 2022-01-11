@@ -2,6 +2,33 @@
   "name": "easybank",
   "version": "0.1.0",
   "private": true,
+  "description": "a simple, aesthetic and responsive web app",
+  "author": {
+    "name": "Oluwashina Odumosu",
+    "email": "odumz20@gmail.com",
+    "url": "https://easy-bank-app.vercel.app/"
+  },
+  "keywords": [
+    "easybank",
+    "easybank-app",
+    "easybank-app-vue",
+    "single-page-app",
+    "vuejs",
+    "vue",
+    "tailwindcss",
+    "responsive",
+    "tailwindcss-responsive",
+    "gsap",
+    "gsap-vue",
+    "gsap-animation",
+    "landing-page",
+    "landing-page-vue",
+    "typescript",
+    "vue-scrollto",
+    "vue-component",
+    "vue-tailwindcss-responsive",
+    "vue-tailwind-gsap"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
